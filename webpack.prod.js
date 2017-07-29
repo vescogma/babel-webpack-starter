@@ -93,13 +93,8 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      {
         test: /\.css$/,
-        include: /node_modules\/@storefront/,
-        use: ['to-string-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(jpg|png|gif)$/,
